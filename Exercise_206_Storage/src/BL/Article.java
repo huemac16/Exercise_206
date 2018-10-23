@@ -1,15 +1,13 @@
-
 package BL;
 
 import java.io.Serializable;
 
+public class Article implements Serializable {
 
-public class Article implements Serializable{
-    
     private String ID;
     private String description;
     private int place;
-    
+
     private int amount;
 
     public Article(String ID, String description, int place) {
@@ -49,8 +47,25 @@ public class Article implements Serializable{
     public void setAmount(int amount) {
         this.amount = amount;
     }
-    
-    
-    
-    
+
+    public void buy() throws Exception {
+        if (!(amount > 75)) {
+            this.amount++;
+        } else {
+            throw new Exception("Anzahl darf nicht über 75 sein");
+        }
+
+    }
+
+    public void sell() throws Exception {
+
+        if (this.amount > 0) {
+            this.amount--;
+        } else {
+            throw new Exception("Anzahl darf nicht kleiner als 0 sein");
+
+        }
+
+    }
+
 }
