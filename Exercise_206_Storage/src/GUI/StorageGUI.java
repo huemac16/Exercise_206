@@ -28,11 +28,19 @@ public class StorageGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        table = new javax.swing.JTable();
+        menue = new javax.swing.JMenuBar();
+        barManagement = new javax.swing.JMenu();
+        AddArticle = new javax.swing.JMenuItem();
+        remove = new javax.swing.JMenuItem();
+        edit = new javax.swing.JMenuItem();
+        barBuySell = new javax.swing.JMenu();
+        buy = new javax.swing.JMenuItem();
+        sell = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -43,7 +51,32 @@ public class StorageGUI extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(table);
+
+        barManagement.setText("Management");
+
+        AddArticle.setText("Add New Article");
+        barManagement.add(AddArticle);
+
+        remove.setText("Remove Selected Article");
+        barManagement.add(remove);
+
+        edit.setText("Edit Selected Article");
+        barManagement.add(edit);
+
+        menue.add(barManagement);
+
+        barBuySell.setText("Buy/Sell");
+
+        buy.setText("Buy Selected Article");
+        barBuySell.add(buy);
+
+        sell.setText("Sell Selected Article");
+        barBuySell.add(sell);
+
+        menue.add(barBuySell);
+
+        setJMenuBar(menue);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -53,9 +86,7 @@ public class StorageGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 68, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
         );
 
         pack();
@@ -97,7 +128,15 @@ public class StorageGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem AddArticle;
+    private javax.swing.JMenu barBuySell;
+    private javax.swing.JMenu barManagement;
+    private javax.swing.JMenuItem buy;
+    private javax.swing.JMenuItem edit;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JMenuBar menue;
+    private javax.swing.JMenuItem remove;
+    private javax.swing.JMenuItem sell;
+    private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables
 }
