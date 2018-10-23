@@ -27,9 +27,87 @@ public class StorageDLG extends javax.swing.JDialog {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
+
+        jLabel1 = new javax.swing.JLabel();
+        tfId = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        tfDes = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        tfPlace = new javax.swing.JTextField();
+        btOK = new javax.swing.JButton();
+        btCance = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
+
+        jLabel1.setText("ID");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
+        getContentPane().add(jLabel1, gridBagConstraints);
+
+        tfId.setText("1238");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
+        getContentPane().add(tfId, gridBagConstraints);
+
+        jLabel2.setText("Descriotion");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
+        getContentPane().add(jLabel2, gridBagConstraints);
+
+        tfDes.setText("Table");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
+        getContentPane().add(tfDes, gridBagConstraints);
+
+        jLabel3.setText("Place");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
+        getContentPane().add(jLabel3, gridBagConstraints);
+
+        tfPlace.setText("10");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        gridBagConstraints.weighty = 0.1;
+        getContentPane().add(tfPlace, gridBagConstraints);
+
+        btOK.setText("OK");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        getContentPane().add(btOK, gridBagConstraints);
+
+        btCance.setText("Cancel");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.1;
+        getContentPane().add(btCance, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -77,5 +155,13 @@ public class StorageDLG extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btCance;
+    private javax.swing.JButton btOK;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JTextField tfDes;
+    private javax.swing.JTextField tfId;
+    private javax.swing.JTextField tfPlace;
     // End of variables declaration//GEN-END:variables
 }
